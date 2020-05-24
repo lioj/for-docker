@@ -2,7 +2,8 @@ FROM debian:latest
 
 MAINTAINER Ramil Mintaev <ramil.mintaev@gmail.com>
 
-RUN apt-get update && apt-get install -y whatever g++ cmake\
+RUN apt-get update && apt-get upgrade -y &&\
+ apt-get install -y g++ cmake\
  libboost-dev libboost-date-time-dev libboost-regex-dev\
  libboost-program-options-dev libboost-filesystem-dev\
  libboost-thread-dev libboost-random-dev\
