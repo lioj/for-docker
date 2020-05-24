@@ -4,7 +4,7 @@ MAINTAINER Ramil Mintaev <ramil.mintaev@gmail.com>
 
 RUN apt-get update && \
  apt-get upgrade -y && \
- apt-get install -y libz-dev libcurl4-gnutls-dev
+ apt-get install -y zip libz-dev libcurl4-gnutls-dev
 
 WORKDIR /tmp
 RUN wget https://github.com/aws/aws-sdk-cpp/archive/version1.8.zip\
